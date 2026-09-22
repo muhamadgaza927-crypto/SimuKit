@@ -1,0 +1,163 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Mencegah scroll */
+}
+
+/* Container utama untuk layout terbelah dua */
+.split-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* SISI KIRI (Putih, berisi form login) */
+.left-side {
+    flex: 1; /* Mengambil 50% lebar layar */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pembungkus konten form agar rapi di tengah */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px; /* Lebar maksimal form disesuaikan dengan gambar */
+}
+
+/* PLACEHOLDER LOGO LENGKAP */
+.logo-placeholder-lengkap {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    background-color: #f0e6d2; 
+    border: 2px dashed #b5a585;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #666;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Jika pakai gambar logo asli, gunakan class ini pada tag <img> */
+.main-logo-lengkap {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Judul Login Siswa */
+.page-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a365d; /* Warna biru gelap */
+    margin-bottom: 25px;
+}
+
+/* Styling Form Container */
+.login-form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left; /* Teks label rata kiri */
+}
+
+.form-group label {
+    font-size: 0.8rem;
+    color: #1a365d; /* Warna biru gelap */
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Kotak Input (Username & Password) */
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #1a365d; /* Garis tepi biru gelap */
+    border-radius: 6px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #f0b80f; /* Berubah kuning saat diklik */
+}
+
+/* Pengaturan Dasar Tombol (Login & Register) */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Tombol Login (Biru) */
+.btn-login {
+    background-color: #1a365d; 
+    color: #f0b80f; /* Teks warna kuning */
+    border: none;
+    margin-top: 5px;
+}
+
+.btn-login:hover {
+    background-color: #122540;
+}
+
+/* Teks "Atau" */
+.text-divider {
+    font-size: 0.85rem;
+    color: #1a365d;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+/* Tombol Register (Kuning) */
+.btn-register {
+    background-color: #f0b80f; 
+    color: #1a365d; /* Teks warna biru */
+    border: 1.5px solid #1a365d; /* Garis tepi biru */
+}
+
+.btn-register:hover {
+    background-color: #dca308;
+}
+
+/* SISI KANAN (Background Kuning dengan Pattern) */
+.right-side {
+    flex: 1; /* Mengambil sisa 50% layar */
+    
+    /* PLACEHOLDER BACKGROUND PATTERN */
+    /* Edit URL di bawah ini dengan gambar pattern milik Anda */
+    background-image: url('PLACEHOLDER_PATTERN.jpg'); 
+    background-color: #f6efd5; 
+    background-repeat: repeat; 
+    background-size:500px;
+    background-position: center;
+    border-left: 2px solid #e2d8b8; /* Garis pemisah tipis jika ada */
+}

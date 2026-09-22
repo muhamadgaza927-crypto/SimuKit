@@ -1,0 +1,166 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Mencegah scroll */
+}
+
+/* Container utama untuk layout terbelah dua */
+.split-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* SISI KIRI (Putih, berisi konten login) */
+.left-side {
+    flex: 1; /* Mengambil 50% lebar layar */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pembungkus konten agar rapi di tengah */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* PLACEHOLDER LOGO (Hapus properti background, border, dll jika sudah pakai tag <img> asli) */
+.logo-utama{
+    width: 180px;
+    height: 180px;
+    background-color: #f0e6d2; /* Warna sementara */
+    border: 2px dashed #b5a585;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Jika pakai gambar asli, gunakan class ini */
+.main-logo {
+    width: 180px; /* Sesuaikan ukuran logo asli */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.second-logo{
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Teks SimuKit dengan efek tebal dan outline */
+.title-outline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ffffff; /* Warna dalam teks putih */
+    -webkit-text-stroke: 2px #6b82a8; /* Outline kebiruan */
+    text-shadow: 2px 2px 0px #a4b3cd; /* Efek shadow */
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+/* Teks Simulasi Merakit dengan efek outline */
+.subtitle-outline {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    -webkit-text-stroke: 1.5px #7a7a7a;
+    text-shadow: 1px 1px 0px #cccccc;
+    margin-bottom: 40px;
+}
+
+/* Pertanyaan "Login atau register sebagai ?" */
+.question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1b3d5e; /* Biru gelap */
+    margin-bottom: 30px;
+}
+
+/* Container Tombol */
+.button-group {
+    display: flex;
+    gap: 30px; /* Jarak antara tombol Siswa dan Guru */
+}
+
+/* Style Tombol Kotak Kuning */
+.btn-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    background-color: #f0b80f; /* Warna kuning tombol */
+    border: 2px solid #1a365d; /* Border biru gelap */
+    border-radius: 8px; /* Sudut sedikit melengkung */
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-square:hover {
+    background-color: #dca308;
+    transform: translateY(-3px); /* Efek terangkat saat dihover */
+}
+
+/* Placeholder Icon di dalam tombol */
+.icon-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(26, 54, 93, 0.1);
+    border: 1px dashed #1a365d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Jika pakai gambar icon asli di dalam tombol, hapus placeholder di atas dan atur css img nya: */
+.btn-square img {
+    width: 50px; /* Sesuaikan ukuran icon */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Teks di dalam tombol */
+.btn-square span {
+    color: #1a365d; /* Biru gelap */
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* SISI KANAN (Background Kuning dengan Pattern) */
+.right-side {
+    flex: 1; /* Mengambil sisa 50% layar */
+
+    
+    /* PLACEHOLDER 4: BACKGROUND PATTERN */
+    /* Edit URL di bawah ini dengan gambar pattern milik Anda */
+    background-image: url('PLACEHOLDER_PATTERN.jpg'); 
+    background-color: #f6efd5; /* Warna dasar kuning pucat jika gambar gagal load */
+    background-repeat: repeat; /* Mengulang gambar pattern */
+    background-size: 500px;/* Sesuaikan ukuran pattern */
+    background-position: center;
+    border-left: 2px solid #e2d8b8; /* Garis pemisah tipis jika diperlukan */
+}
